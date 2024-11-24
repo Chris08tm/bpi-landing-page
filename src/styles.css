@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  color: black; /* Text color */
+  text-align: center;
+}
+
+.archivo-black-logo {
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.page-heading {
+  color: black;
+}
+
+.logo {
+  max-width: 20%;
+  max-height: auto;
+  margin: 0.2rem 0;
+}
+
+.navbar {
+  background-color: white;
+  color: #4a5568;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li:hover {
+  background-color: #333;
+}
+
+.navbar a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.navbar-button {
+  color: white;
+  border-color: #3d63ea;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 10px 20px; /* Adjust padding for size */
+  font-size: 16px; /* Adjust font size */
+  background-color: #3d63ea; /* Button background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.bpi-button {
+  color: white;
+  border-color: #3d63ea;
+  box-shadow: none;
+  border-radius: 4px;
+  margin: 3rem 0;
+  padding: 10px 20px; /* Adjust padding for size */
+  font-size: 16px; /* Adjust font size */
+  background-color: #3d63ea; /* Button background */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.bpi-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.home-page {
+  padding: 5% 10%;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+}
+
+.home-page-msg {
+  padding-top: 10%;
+}
+
+.home-page-img {
+  max-width: 50%;
+  max-height: auto;
+  margin: 0.2rem 0;
+}
+
+.phrase {
+  font-size: xxx-large;
+  padding-bottom: 3%;
+}
+
+.phrase .light {
+  font-weight: 100; /* Regular weight */
+}
+
+.phrase .highlight {
+  font-weight: 600; /* Bold */
+  background-clip: text;
+  background: linear-gradient(
+    90deg,
+    #0b83ca,
+    #46d1ff
+  ); /* Gradient from purple to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.phrase .bold-highlight {
+  font-family: "Archivo Black", serif;
+  background-clip: text;
+  background: linear-gradient(
+    90deg,
+    #0b83ca,
+    #46d1ff
+  ); /* Gradient from purple to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==== SERVICES ==== */
+.services-page {
+  background-color: #ebeffa;
+  border: 2px solid #c8d7fc;
+  padding: 2% 0%;
+}
+
+.card-carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.container {
+  max-width: 20%;
+}
+
+.card-image {
+  margin: 0% 5%;
+  max-width: 20%;
+  height: auto;
+}
+
+.about-page {
+  display: flex;
+  padding: 10%;
+}
+
+.about-text {
+  text-align: start;
+}
+
+/* ===== FOOTER =====*/
+.footer {
+  background-color: #ebeffa; /* Dark background */
+  border: 2px solid #c8d7fc;
+  color: black; /* White text for contrast */
+  text-align: center;
+  padding: 1.5rem 0; /* Space inside the footer */
+  font-family: "Archivo", sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px; /* Keeps content aligned */
+  margin: 0 auto; /* Centers the footer content */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 1rem; /* Space between text and links */
+}
+
+.footer-links a {
+  color: #46d1ff; /* Highlight color for links */
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: #0b83ca; /* Lighter color on hover */
+  text-decoration: underline; /* Subtle hover effect */
+}
