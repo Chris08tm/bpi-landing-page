@@ -1,8 +1,23 @@
-import backup from "../assets/backups-transparent.png";
+import backup from "../assets/backups-transparent-cropped.png";
 import tuneup from "../assets/tuneups-transparent.png";
 import remote from "../assets/remote_support-transparent.png";
+import { useEffect, useState } from "react";
 
 export default function BPIServices() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Track window size and update state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+
+    handleResize(); // Check size on initial render
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="services-page" id="services-page">
       <h1 className="page-heading">Our services</h1>
@@ -24,20 +39,41 @@ export default function BPIServices() {
           </div>
         </div>
         <div class="card">
-          <div class="container">
-            <h4>
-              <b>Data Backup</b>
-            </h4>
-            <p>
-              A data backup is a copy of your important files, like documents,
-              photos, or videos, saved in a safe place. This way, if your
-              computer crashes, gets lost, or is damaged, you won't lose your
-              files. Backups can be stored on an external drive or in the cloud,
-              giving you peace of mind that your data is secure and easy to
-              restore.
-            </p>
-          </div>
-          <img className="card-image" src={backup} alt="Backup" />
+          {isMobile ? (
+            <>
+              <img className="card-image" src={backup} alt="Backup" />
+              <div class="container">
+                <h4>
+                  <b>Data Backup</b>
+                </h4>
+                <p>
+                  A data backup is a copy of your important files, like
+                  documents, photos, or videos, saved in a safe place. This way,
+                  if your computer crashes, gets lost, or is damaged, you won't
+                  lose your files. Backups can be stored on an external drive or
+                  in the cloud, giving you peace of mind that your data is
+                  secure and easy to restore.
+                </p>
+              </div>
+            </>
+          ) : (
+            <>
+              <div class="container">
+                <h4>
+                  <b>Data Backup</b>
+                </h4>
+                <p>
+                  A data backup is a copy of your important files, like
+                  documents, photos, or videos, saved in a safe place. This way,
+                  if your computer crashes, gets lost, or is damaged, you won't
+                  lose your files. Backups can be stored on an external drive or
+                  in the cloud, giving you peace of mind that your data is
+                  secure and easy to restore.
+                </p>
+              </div>
+              <img className="card-image" src={backup} alt="Backup" />
+            </>
+          )}
         </div>
         <div class="card">
           <img className="card-image" src={remote} alt="Remote support" />
