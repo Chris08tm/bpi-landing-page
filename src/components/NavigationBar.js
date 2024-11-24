@@ -15,10 +15,10 @@ export default function NavigationBar() {
       </a>
       <ul>
         <li>
-          <a href="/services">Services</a>
+          <a href="#services-page">Services</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <a href="#about-page">About</a>
         </li>
         <li>
           <button onClick={handleClick} className="navbar-button">

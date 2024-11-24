@@ -4,7 +4,7 @@ import remote from "../assets/remote_support-transparent.png";
 
 export default function BPIServices() {
   return (
-    <div className="services-page">
+    <div className="services-page" id="services-page">
       <h1 className="page-heading">Our services</h1>
       <div className="card-carousel">
         <div class="card">

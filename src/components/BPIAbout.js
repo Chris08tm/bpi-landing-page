@@ -2,7 +2,7 @@ import aboutImg from "../assets/about_page.jpg";
 
 export default function BPIAbout() {
   return (
-    <div className="about-page">
+    <div className="about-page" id="about-page">
       <div className="about-text">
         <div className="phrase">
           <span class="light">

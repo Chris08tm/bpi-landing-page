@@ -47,7 +47,7 @@ body {
 }
 
 .navbar li:hover {
-  background-color: #333;
+  color: #3d63ea;
 }
 
 .navbar a {
