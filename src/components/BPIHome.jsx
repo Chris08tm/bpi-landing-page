@@ -17,7 +17,7 @@ export default function BPIHome({ language }) {
             ? "Your productivity matters—let us handle the tech, so you can focus on what you do best."
             : "Tu productividad importa—dejanos la technologia, para que tu te puedas enfocar en lo que mejor haces."}
         </p>
-        <BPIButton text={language === "en" ? "Learn more!" : "Aprende mas!"} />
+        <BPIButton text={language === "en" ? "Learn more!" : "Aprende mas!"}/>
       </div>
       <img src={homeImg} alt="Technical Support" className="home-page-img" />
     </div>

@@ -5,10 +5,9 @@ export default function NavigationBar({ language, toggleLanguage }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = () => {
-    // Redirect to an external website and replace the current page in history
-    window.location.replace(
+    window.open(
       "https://prettyform.addxt.com/a/form/vf/1FAIpQLSf7JCifnb3lEPE0WLzOMVuXXNfz5gC3faUuymgorNlj4VPC3g"
-    ); // Replace with the desired URL
+    );
   };
 
   const handleClickOnMenu = () => {
