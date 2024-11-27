@@ -3,7 +3,7 @@ import tuneup from "../assets/tuneups-transparent.png";
 import remote from "../assets/remote_support-transparent.png";
 import { useEffect, useState } from "react";
 
-export default function BPIServices() {
+export default function BPIServices({ language }) {
   const [isMobile, setIsMobile] = useState(false);
 
   // Track window size and update state

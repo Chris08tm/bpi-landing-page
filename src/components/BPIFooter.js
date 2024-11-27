@@ -1,4 +1,4 @@
-export default function BPIFooter() {
+export default function BPIFooter({ language }) {
   return (
     <footer class="footer">
       <div class="footer-content">

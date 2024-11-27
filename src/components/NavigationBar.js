@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/byte-precision-it-high-resolution-logo-transparent.png";
 
-export default function NavigationBar() {
+export default function NavigationBar({ language, toggleLanguage }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = () => {
@@ -27,14 +27,27 @@ export default function NavigationBar() {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <a href="#services-page">Services</a>
+          <div className="toggle-div">
+            <p>Español?</p>
+            <label class="switch">
+              <input type="checkbox" onChange={toggleLanguage} />
+              <span class="slider round"></span>
+            </label>
+          </div>
         </li>
         <li>
-          <a href="#about-page">About</a>
+          <a href="#services-page">
+            {language === "es" ? "Servicios" : "Services"}
+          </a>
+        </li>
+        <li>
+          <a href="#about-page">
+            {language === "es" ? "Sobre Nosotros" : "About"}
+          </a>
         </li>
         <li>
           <button onClick={handleClick} className="navbar-button">
-            Survey!
+            {language === "es" ? "Encuesta!" : "Survey!"}
           </button>
         </li>
       </ul>

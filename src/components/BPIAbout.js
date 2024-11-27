@@ -1,6 +1,6 @@
 import aboutImg from "../assets/about_page.jpg";
 
-export default function BPIAbout() {
+export default function BPIAbout({ language }) {
   return (
     <div className="about-page" id="about-page">
       <div className="about-text">
